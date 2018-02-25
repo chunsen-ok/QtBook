@@ -1,0 +1,2 @@
+# QtBook
+Qt Assistant Translation
