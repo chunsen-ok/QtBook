@@ -1,0 +1,9 @@
+# Qt GUI Module
+
+Qt的绘图系统使用相同的API将图形绘制到屏幕以及使用打印设备打印图形。Qt Paint System主要基于QPainter,QPaintDevice,QPaintEngine类。
+
+QPainter用于执行绘图操作，QPainterDevice提供了一个抽象的二维绘图设备，是QPainter绘图的目标设备。QPaintEngine则提供了QPainter在不同设备上绘图的实际绘图功能接口。QPaintEngine类在QPainter和QPaintDevice间隐式地被使用，并且一般情况下对应用开发者不可见，除非需要创建爱自己的绘图设备类型。
+
+![](PaintSystem.PNG)
+
+这种例程方式的主要好处是所有的绘图操作都遵循相同的绘图管线，这样可以很容易地支持新的特性并为不支持的类型提供默认实现。

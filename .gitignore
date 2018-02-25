@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.o
+Examples/qmake_Examples/debug/helloWorld.exe
+*.stash
+Examples/qmake_Examples/Makefile.Debug
+*.Release

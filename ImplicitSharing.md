@@ -1,0 +1,1 @@
+# Qt Core - Implicit Sharing
