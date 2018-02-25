@@ -8,6 +8,8 @@
         * [The Qt Resource System](ResourceSystem.md)
     * [Qt Widgets](QtWidgets.md)
         * [图形视图框架(Graphics View Framework)](GraphicsViewFramework.md)
+    * [Qt QML](QtQml/QtQml.md)
+        * [QML Modules](QtQml/QmlModules.md)
     * [Qt Quick](QtQuick.md)
     * [Qt GUI](QtGUI.md)
         * [Coordinate System](QtGUI_CoordsSys.md)
