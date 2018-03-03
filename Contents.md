@@ -17,6 +17,7 @@
     * [Qt MultimediaWidgets](QtMultimediaWidgets.md)
     * [Qt Serial Port](QtSerialPort.md)
     * [Qt Charts](QtCharts.md)
+    * [Qt SQL](QtSQL.md)
 * [Overviews](Overviews.md)
     * [Core Internals](CoreInternals.md)
         * [The Event System](EventSystem.md)
