@@ -750,7 +750,7 @@ QCache和QContiguousCache类提供了在一块有限的存储空间中使用哈�
 Qt Core模块还提供了Qt的其他关键框架：  
 * [动画框架(The Animation Framework)](#index5-1)
 * [Json支持框架(JSON Support in Qt)](JsonSupportInQt.md)
-* [状态机框架(The State Machine Framework)](#index5-3)
+* [状态机框架(The State Machine Framework)](StateMachineFramework.md)
 * [创建Qt插件(How to Create Qt Plugins)](#index5-4)
 * [事件系统(The Event System)](#index5-5)
 

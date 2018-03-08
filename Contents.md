@@ -8,6 +8,7 @@
         * [The Qt Resource System](ResourceSystem.md)
     * [Qt Widgets](QtWidgets.md)
         * [图形视图框架(Graphics View Framework)](GraphicsViewFramework.md)
+        * [Qt样式表(Qt Style Sheets)](QtStyleSheets.md)
     * [Qt QML](QtQml/QtQml.md)
         * [QML Modules](QtQml/QmlModules.md)
     * [Qt Quick](QtQuick.md)
@@ -27,6 +28,7 @@
         * [Using the Meta-Object Compiler(moc)](Qt_moc.md)
         * [qmake Manual](qmake.md)
 * [Class Reference](QtClassReference.md)
+* [Develop Reference](DevelopRefer.md)
 * [Logs](Logs.md)
 * [单词索引](UnknownWords.md)
 
