@@ -54,7 +54,7 @@ Qt样式表是一种可用于自定义部件外观的强大机制，另外几乎
 <div id="index4"/>
 
 ## 布局(Layouts)
-* [Layouts](#index4-1)
+* [Layouts](Layouts.md)
 
 布局是一种优雅而灵活的组织子部件的方式。每个部件通过sizeHint和sizePolicy属性将自己的尺寸要求告知布局，然后布局根据需求生成指定的尺寸大小。  
 Qt Designer是一个强大的创建和管理部件的工具。

@@ -6,17 +6,18 @@
 * [简单状态机(A Simple State Machine)](#index-2)
 * [在状态入口和出口做有意义的工作(Doing Usefule work on State Entry and Exit)](#index-3)
 * [状态机的结束(State Machines That Finish)](#index-4)
-* [使用历史状态来保存和重装当前状态(Using History States to Save and Restore the Current State)](#index-5)
-* [使用并行状态来避免状态数量的暴涨(Using Parallel States to Avoid a Combinational Explosion of States)](#index-6)
-* [检测组合状态的结束(Detecting that a Composite State has finished)](#index-7)
-* [无目标转换(Targetless Transitions)](#index-8)
-* [事件、转换和Guards(Events,Transitions and Guards)](#index-9)
-* [使用重装策略实现属性自动重装(Using Restore Policy To Automatically Restore Properties)](#index-10)
-* [属性赋值动画(Animating Properties Assignments)](#index-11)
-* [检测搜索属性是否都设置为了同一状态(Detecting That All Properties Have Been Set In A State)](#index-12)
-* [在动画结束前退出状态会发生什么(What Happens If A State Is Exited Before The Animation Has Finished)](#index-13)
-* [默认动画(Default Animation)](#index-14)
-* [嵌套状态机(Nesting State Machines)](#index-15)
+* [通过状态分组来共享切换(Sharing Transitions By Grouping States)](#index-5)
+* [使用历史状态来保存和重装当前状态(Using History States to Save and Restore the Current State)](#index-6)
+* [使用并行状态来避免状态数量的暴涨(Using Parallel States to Avoid a Combinational Explosion of States)](#index-7)
+* [检测组合状态的结束(Detecting that a Composite State has finished)](#index-8)
+* [无目标转换(Targetless Transitions)](#index-9)
+* [事件、转换和Guards(Events,Transitions and Guards)](#index-10)
+* [使用重装策略实现属性自动重装(Using Restore Policy To Automatically Restore Properties)](#index-11)
+* [属性赋值动画(Animating Properties Assignments)](#index-12)
+* [检测搜索属性是否都设置为了同一状态(Detecting That All Properties Have Been Set In A State)](#index-13)
+* [在动画结束前退出状态会发生什么(What Happens If A State Is Exited Before The Animation Has Finished)](#index-14)
+* [默认动画(Default Animation)](#index-15)
+* [嵌套状态机(Nesting State Machines)](#index-16)
 
 状态机框架中提供的类可用于创建和执行状态图(state graphs)。这些概念和表示法(notation)是基于Harel的论文《[StateCharts:A visual formalism for complex systems](http://www.wisdom.weizmann.ac.il/~dharel/SCANNED.PAPERS/Statecharts.pdf)》。同时，该论文也是UML状态图的基础。状态机执行的语义(semantics)基础是状态表XML(SCXML).
 
@@ -35,18 +36,21 @@
 | Class | Description |
 | :---  | :--- |
 | QAbstractState | 状态机的状态的基类 |
-| QAbstractTransition ||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+| QAbstractTransition | 状态切换；负责QAbstractState对象间切换的基类 |
+| QEventTransition | 为Qt事件提供了QObject相关的切换(Provides a QObject-Specific transition for Qt events.) |
+| QFinalState | 最后状态 |
+| QHistoryState | 获取之前的活动状态 |
+| QSignalTransition | 基于信号的状态切换 |
+| QState | QStateMachine的通用状态类 |
+| QStateMachine | 有限层次的状态机 |
+| QStateMachine::SignalEvent | 表示一个Qt信号事件 |
+| QStateMachine::WrappedEvent | 派生自QEvent并管理与QObject关联的克隆的事件 |
+| QKeyEventTransition | 按键事件的切换 |
+| QMouseEventTransition | 鼠标事件的切换 |
+
+
+<div id="index-2"/>
+
+## 简单状态机(A Simple State Machine)
+
+
