@@ -1,2 +1,0 @@
-# QtBook
-Qt Assistant Translation
