@@ -60,5 +60,14 @@ Qt提供了与平台无关的管理线程和并行代码的功能。
 <div id="index-6">
 
 ## Platform Support
+Qt编写的代码可以不做任何改动而在不同的平台上编译和部署。如果需要使用平台特定的功能和系统库，在Qt依旧可以很方便的将两者结合起来。
 
+Qt使用Qt平台抽象(QPA)将窗口系统集成到目标平台上。QPA是一个窗口系统的抽象，可以方便快捷得将Qt迁移到一个新的平台上去。例如Wayland协议系统正是如此。Qt可以同Wayland作为一个轻量级的窗口系统迁移到嵌入式硬件平台中使用，并支持多进程的图形用户界面。
+
+Qt平台抽象会用到Qt的插件系统。插件系统提供了Qt在特定功能（如添加对图像格式的支持，数据库驱动等等）上进行扩展的接口，以及开发者开发自己的支持第三方插件的可扩展Qt应用的支持。
+
+* [Qt Platform Abstraction]()
+* [Implementing Atomic Operations]() - for new architecture
+* [How to Create Plugins]()
+* [Endian Conversion Functions]() - functions for handling endianness from the QtEndian header
 
