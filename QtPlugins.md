@@ -12,11 +12,12 @@
 Qt中提供了两种创建插件的方式：  
 * 上层API用于编写Qt自身的扩展：自定义数据库驱动，图像格式，文本解码，自定义风格等等；
 * 底层API用于扩展Qt应用。
-例如，如果你想编写一个派生自QStyle的自定义类，并且通过Qt应用动态加载使用，你应该使用上层API。
 
-一般上层API建立在底层API上，有的问题两种都需要使用。(Since the higher-level API is built on top of the lower-level API, some issues are common to both.)
+例如，如果你想编写一个派生自QStyle的子类，并且通过Qt应用动态加载使用，你应该使用上层API。
 
-如果你想为Qt Designer提供插件，参考Qt Designer模块的文档。
+一般上层API建立在底层API基础上，有的情况两种都需要使用。(Since the higher-level API is built on top of the lower-level API, some issues are common to both.)
+
+如果你想在Qt Designer使用自定义插件，可以参考Qt Designer模块的文档。
 
 <div id="index-1"/>
 
