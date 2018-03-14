@@ -96,8 +96,7 @@ Qt中提供了两种创建插件的方式：
 [Style Plugin Example](#例子)讲解了如何使用QStylePlugin类创建新的插件。
 
 ## 底层API：扩展Qt应用(The Low-Level API: Extending Qt Applications)
-
-
+不只是Qt本身可以使用插件进行扩展，Qt应用同样可以。这要求应用能够使用QPluginLoader检测和加载插件。在具体的使用中，插件就可能提供任何功能，而不限于Qt的数据库驱动，图像格式，文本解码，风格等等。
 
 
 
