@@ -64,7 +64,7 @@ Qt Designer是一个强大的创建和管理部件的工具。
 <div id="index5"/>
 
 ## 模型/视图类(Model/view Classes)
-* [model/view Programming](#index5-1)
+* [model/view Programming](ModelViewArchitecture.md)
 
 模型/视图结构提供了一种用于管理展示给用户的数据的方式。数据驱动的应用使用结构化的列表和图表将数据拆分开来。
 
