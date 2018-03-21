@@ -1,7 +1,7 @@
 # Qt Widget - Layouts
 
 ## Contents
-* [介绍(Instroduction)](#index-1)
+* [介绍(Introduction)](#index-1)
 * [Qt的布局类(Qt's Layout Classes)](#index-2)
 * [水平、垂直、网格和表单布局器(Horizontal,Vertical,Grid,and Form Layouts)](#index-3)
     * [在代码中对控件布局(Laying Out Widgets in Code)](#index-31)
@@ -17,4 +17,9 @@
     * [其他(Further Notes)](#index-73)
 * [布局示例(Layout Examples)](#index-8)
 
+Qt布局系统提供了简单强大的自动安排子控件的方法，使控件能够充分使用空间。
+
+<div id="index-1"/>
+
+## 介绍(Introduction)
 
